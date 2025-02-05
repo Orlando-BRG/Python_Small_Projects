@@ -1,17 +1,22 @@
-# Car weight capacity
+# Car weight capacity calculator
 
-soda = 12
-polvilho = 55
-extra_weight = 5
+# Weight of each item (in lbs)
 
-def car_weight(soda, polvilho, extra_weight):
+soda_weight = 12 # Each pack of soda weights 12 lbs
+polvilho_weight = 55 # Each pack of polvilho weights 55 lbs 
+extra_item_weight = 5 # Each extra item weights 5 lbs
+
+def car_weight():
     try:
-        soda = int(input("Packs of soda: "))
-        polvilho = int(input("Bags of polvilho: "))
-        extra_weight = int(input("Extra items: "))
+        # User input: number of packs and bags
+        soda_count = int(input("Packs of soda: "))
+        polvilho_count = int(input("Bags of polvilho: "))
+        extra_item_count = int(input("Extra items: "))
+        
+        # Calculate total weight 
     except ValueError:
         print("Numbers only")
-        car_weight = soda + polvilho + extra_weight
+        car_weight = (soda * polvilho * extra_weight)
     if car_weight > 1.3:
         print("Car Overload")
     print(f"total weight: {soda} + {polvilho} + {extra_weight}")
