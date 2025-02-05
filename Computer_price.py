@@ -45,3 +45,5 @@ if total_cost:
     print(f"🔻 Discount (30%): -${discount:.2f}")
     print(f"✅ Final Price (After Taxes & Discount): ${final_price1:.2f}")
     print(f"✅ Final Price (Before Taxes & Discount): ${final_price:.2f}")
+
+test
