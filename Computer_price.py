@@ -10,7 +10,7 @@ def get_valid_input(prompt):
 
 
 def computer_price():
-    # Get the cost of each component
+    # Get the cost of each component for computer
     cpu = get_valid_input("CPU: Intel Core i7-13700K: ")
     gpu = get_valid_input("GPU: ASUS ROG Strix NVIDIA GeForce RTX 4070 Ti OC Edition: ")
     motherboard = get_valid_input("Motherboard: ASUS ROG Strix Z790-E Gaming WiFi 6E: ")
